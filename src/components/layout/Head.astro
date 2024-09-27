@@ -1,0 +1,48 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<title>{title} - Rory Stock</title>
+
+<!-- Primary Meta Tags -->
+<meta name="title" content="Rory Stock Photography">
+<meta name="description" content="Rory Stock is a New Zealand based sports and product photographer specialising in mountain biking.">
+<meta name="keywords" content="photography, mountain bike photography, action photography, product photography, portfolio, Rory Stock photography">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="author" content="Rory Stock">
+<meta name="copyright" content="Rory Stock">
+<meta name="viewport" content="width=device-width" />
+<link rel="canonical" href="https://rorystock.com/">
+<meta name="generator" content={Astro.generator} />
+
+<!-- Icons -->
+<link rel="icon" href="/favicons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="manifest" href="/favicons/site.webmanifest">
+
+
+<!-- Fonts -->
+<link rel="stylesheet" href="https://use.typekit.net/nqc5atv.css">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rorystock.com/">
+<meta property="og:title" content="Rory Stock Photography">
+<meta property="og:description" content="Rory Stock is a New Zealand based sports and product photographer specialising in mountain biking.">
+
+<!-- Twitter -->
+<meta property="twitter:url" content="https://rorystock.com/">
+<meta property="twitter:title" content="Rory Stock Photography">
+<meta property="twitter:description" content="Rory Stock is a New Zealand based sports and product photographer specialising in mountain biking.">
+
+<ViewTransitions />

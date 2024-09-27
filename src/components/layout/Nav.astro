@@ -1,0 +1,28 @@
+---
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+
+const activeHome = title === "Home" ? "text-black" : "text-gray-500";
+const activePersonal = title === "Personal" ? "text-black" : "text-gray-500";
+const activeProjects = title === "Projects" ? "text-black" : "text-gray-500";
+const activeEvents = title === "Events" ? "text-black" : "text-gray-500";
+const activeContact = title === "Contact" ? "text-black" : "text-gray-500";
+---
+
+
+<nav class="flex lg:hidden items-center pr-6">
+  <a href="/MobileNav" aria-label="Mobile navigation button"><svg class="w-10 h-auto fill-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+</nav>
+
+<nav class="hidden lg:flex items-center pr-6">
+  <ul class="inline-flex gap-4 font-neue-haas-grotesk-text font-semibold text-xl">
+    <li><a href="/" class={activeHome}>Home</a></li>
+    <li><a href="/personal" class={activePersonal}>Personal</a></li>
+    <li><a href="/projects" class={activeProjects}>Projects</a></li>
+    <li><a href="/events" class={activeEvents}>Events</a></li>
+    <li><a href="/contact" class={activeContact}>Contact</a></li>
+  </ul>
+</nav>

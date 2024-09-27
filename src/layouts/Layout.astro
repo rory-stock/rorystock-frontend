@@ -1,0 +1,35 @@
+---
+import Head from "../components/layout/Head.astro"
+import Header from "../components/layout/Header.astro"
+import Footer from "../components/layout/Footer.astro"
+
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+    <Head title={title} />
+</head>
+
+<body>
+<div class="flex flex-col h-screen">
+    <header>
+        <Header title={title} />
+    </header>
+
+    <main class="flex-1">
+        <slot />
+    </main>
+
+    <footer>
+        <Footer />
+    </footer>
+</div>
+</body>
+</html>
