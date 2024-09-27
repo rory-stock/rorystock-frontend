@@ -4,9 +4,14 @@ import cloudflare from '@astrojs/cloudflare';
 
 import tailwind from '@astrojs/tailwind';
 
+import react from '@astrojs/react';
+
 // https://astro.build/config
 export default defineConfig({
   output: 'server',
+  security: {
+    checkOrigin: true
+  },
 
   adapter: cloudflare({
     platformProxy: {
@@ -14,5 +19,5 @@ export default defineConfig({
     }
   }),
 
-  integrations: [tailwind()]
+  integrations: [tailwind(), react()]
 });
