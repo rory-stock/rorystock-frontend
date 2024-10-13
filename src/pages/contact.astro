@@ -1,11 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ContactForm from '../components/react/ContactForm';
+
+export const prerender = true;
 ---
 
 <Layout title="Contact">
     <div class="flex xl:items-center pt-4 pl-3 md:pl-6">
-        <p class="font-georgia text-black selection:text-blue-499 text-xl md:text-3xl lg:text-4xl font-normal">
+        <p class="font-georgia text-black selection:text-blue-499 text-xl md:text-3xl lg:text-4xl font-normal pr-1">
             <span class="capitalize text-blue-499 selection:text-black font-neue-haas-grotesk-display font-semibold md:font-bold">
                 Want to work together?&nbsp;
             </span>
@@ -17,6 +19,5 @@ import ContactForm from '../components/react/ContactForm';
             Whether you’re looking to collaborate or just want to chat, send me a message through the form below.
         </p>
     </div>
-
-    <ContactForm client:idle/>
+    <ContactForm client:load/>
 </Layout>

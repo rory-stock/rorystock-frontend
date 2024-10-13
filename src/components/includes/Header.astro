@@ -1,5 +1,6 @@
 ---
-import Nav from './Nav.astro';
+import Nav from './Nav/DesktopNav.astro';
+import MobileNav from './Nav/MobileNav';
 
 interface Props {
     title: string;
@@ -9,7 +10,7 @@ const { title } = Astro.props;
 ---
 
 <div class="flex flex-col gap-1 md:gap-2">
-    <div class="flex pl-1">
+    <div class="flex flex-row">
         <span class="bg-white w-1/12 h-5 md:h-8"></span>
         <span class="bg-gray-50 w-1/12 h-5 md:h-8"></span>
         <span class="bg-gray-100 w-1/12 h-5 md:h-8"></span>
@@ -24,10 +25,10 @@ const { title } = Astro.props;
         <span class="bg-black w-1/12 h-5 md:h-8"></span>
     </div>
 
-    <div class="flex flex-row align-middle pb-1 md:pb-0 justify-between select-none">
+    <div class="flex flex-row items-center align-middle pb-1 md:pb-0 justify-between select-none">
         <h1 class="font-neue-haas-grotesk-display text-5xl md:text-7xl font-semibold pl-2">Rory Stock</h1>
-
-        <Nav title={title} />
+        <MobileNav client:only="react"/>
+        <Nav title={title}/>
     </div>
 
     <div class="bg-black w-screen h-1"></div>

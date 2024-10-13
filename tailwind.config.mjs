@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			animation: {
-				'scroll-right-to-left': 'scroll-right-to-left 10s linear infinite'
+				'scroll-right-to-left': 'scroll-right-to-left 25s linear infinite',
 			},
 			fontFamily: {
 				helvetica: ['Helvetica', 'Arial', 'sans-serif'],
@@ -14,18 +14,18 @@ export default {
 			},
 			colors: {
 				blue: {
-					'499': '#2068FF'
+					'499': '#2068FF',
 				}
 			},
 			keyframes: {
 				'scroll-right-to-left': {
-					from: {
-						transform: 'translateX(0)'
+					'0%': {
+						transform: 'translate3d(0, 0, 0)'
 					},
-					to: {
-						transform: 'translateX(-100%)'
-					}
-				}
+					'100%': {
+						transform: 'translate3d(-50%, 0, 0)'
+					},
+				},
 			},
 		},
 	},

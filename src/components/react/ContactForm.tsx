@@ -39,9 +39,9 @@ export function ContactForm() {
         message: "",
         contactMethod: "",
         },
-    })
+    });
 
-    const api = "http://localhost:8787/contact";
+    const api = "rorystock-api.rorystock06.workers.dev/contact";
     function onSubmit(data: z.infer<typeof FormSchema>) {
         form.reset();
         console.log(data);
@@ -69,23 +69,23 @@ export function ContactForm() {
         <form onSubmit={form.handleSubmit(onSubmit)} className="p-6 flex flex-col gap-2 max-w-fit items-stretch">
             <div className={"flex flex-col"}>
                 <div className={"flex flex-row"}>
-                    <label htmlFor="name" className={"font-neue-haas-grotesk-display font-bold text-xl pr-2 selection:text-blue-499 cursor-text"}>Your Name</label>
-                    <input type="text" className={"border-2 border-black rounded pl-2"} {...form.register("name")} />
+                    <label htmlFor="name" className={"flex-none font-neue-haas-grotesk-display font-bold text-lg md:text-xl pr-2 selection:text-blue-499 cursor-text"}>Your Name</label>
+                    <input type="text" className={"shrink w-3/4 border-2 border-black rounded pl-2"} {...form.register("name")} />
                 </div>
                 {form.formState.errors.name && <p className={"font-neue-haas-grotesk-text font-semibold text-red-500 selection:text-neutral-500"}>{form.formState.errors.name.message}</p>}
             </div>
 
             <div className={"flex flex-col"}>
                 <div className={"flex flex-row"}>
-                    <label htmlFor="email" className={"font-neue-haas-grotesk-display font-bold text-xl pr-2 selection:text-blue-499 cursor-text"}>Your Email</label>
-                    <input type="email" className={"border-2 border-black rounded pl-2"} {...form.register("email")} />
+                    <label htmlFor="email" className={"flex-none font-neue-haas-grotesk-display font-bold text-lg md:text-xl pr-2 selection:text-blue-499 cursor-text"}>Your Email</label>
+                    <input type="email" className={"shrink w-3/4 border-2 border-black rounded pl-2"} {...form.register("email")} />
                 </div>
                 {form.formState.errors.email && <p className={"font-neue-haas-grotesk-text font-semibold text-red-500 selection:text-neutral-500"}>{form.formState.errors.email.message}</p>}
             </div>
 
             <div className={"flex flex-col"}>
                 <div className={"flex flex-col"}>
-                    <label htmlFor="message" className={"font-neue-haas-grotesk-display font-bold text-xl pr-2 selection:text-blue-499 cursor-text"}>Tell me about your idea</label>
+                    <label htmlFor="message" className={"font-neue-haas-grotesk-display font-bold text-lg md:text-xl pr-2 selection:text-blue-499 cursor-text"}>Tell me about your idea</label>
                     <textarea className={"border-2 border-black rounded pl-2"} {...form.register("message")} />
                 </div>
                 {form.formState.errors.message && <p className={"font-neue-haas-grotesk-text font-semibold text-red-500 selection:text-neutral-500"}>{form.formState.errors.message.message}</p>}
@@ -93,8 +93,8 @@ export function ContactForm() {
 
             <div className={"flex flex-col"}>
                 <div className={"flex flex-col"}>
-                    <label htmlFor="contactMethod" className={"font-neue-haas-grotesk-display font-bold text-xl pr-2 selection:text-blue-499 cursor-text"}>Preferred contact method</label>
-                    <input type="text" placeholder="text, instagram, etc." className={"border-2 border-black rounded pl-2"} {...form.register("contactMethod")} />
+                    <label htmlFor="contactMethod" className={"font-neue-haas-grotesk-display font-bold text-lg md:text-xl pr-2 selection:text-blue-499 cursor-text"}>Preferred contact method</label>
+                    <input type="text" placeholder="text, instagram, etc." className={"border-2 border-black rounded pl-2 placeholder:text-sm md:placeholder:text-base"} {...form.register("contactMethod")} />
                 </div>
                 {form.formState.errors.contactMethod && <p className={"font-neue-haas-grotesk-text font-semibold text-red-500 selection:text-neutral-500"}>{form.formState.errors.contactMethod.message}</p>}
             </div>
