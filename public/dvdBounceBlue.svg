@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148.39 38.53">
+    <defs>
+        <style>
+            .cls-1 {
+            fill: #2068ff;
+            font-family: FuturaPT-Bold, 'Futura PT';
+            font-size: 16.47px;
+            font-weight: 700;
+            }
+
+            .cls-2 {
+            letter-spacing: 0em;
+            }
+
+            .cls-3 {
+            letter-spacing: 0em;
+            }
+
+            .cls-4 {
+            fill: #fff;
+            }
+
+            .cls-5 {
+            letter-spacing: -.09em;
+            }
+
+            .cls-6 {
+            letter-spacing: -.06em;
+            }
+
+            .cls-7 {
+            letter-spacing: -.02em;
+            }
+
+            .cls-8 {
+            letter-spacing: -.04em;
+            }
+
+            .cls-9 {
+            letter-spacing: -.04em;
+            }
+
+            .cls-10 {
+            letter-spacing: -.03em;
+            }
+
+            .cls-11 {
+            letter-spacing: .06em;
+            }
+
+            .cls-12 {
+            letter-spacing: .06em;
+            }
+
+            .cls-13 {
+            font-family: FuturaPT-Heavy, 'Futura PT';
+            font-size: 16.47px;
+            font-weight: 800;
+            }
+
+            .cls-14 {
+            letter-spacing: .02em;
+            }
+
+            .cls-15 {
+            letter-spacing: .02em;
+            }
+
+            .cls-16 {
+            letter-spacing: .04em;
+            }
+        </style>
+    </defs>
+    <g>
+        <ellipse class="cls-4" cx="74.19" cy="28.06" rx="74.19" ry="10.01"/>
+        <text class="cls-13" transform="translate(31.43 32.78) scale(1.46 1)">
+            <tspan class="cls-12" x="0" y="0">P</tspan>
+            <tspan class="cls-15" x="10.41" y="0">H</tspan>
+            <tspan class="cls-16" x="22.6" y="0">O</tspan>
+            <tspan class="cls-11" x="36.6" y="0">T</tspan>
+            <tspan class="cls-2" x="45.17" y="0">O</tspan>
+        </text>
+    </g>
+    <text class="cls-1" transform="translate(5.28 12.01) scale(1.66 1)">
+        <tspan class="cls-5" x="0" y="0">R</tspan>
+        <tspan class="cls-6" x="8.93" y="0">o</tspan>
+        <tspan class="cls-14" x="18" y="0">r</tspan>
+        <tspan class="cls-3" x="25.07" y="0">y</tspan>
+        <tspan class="cls-8" x="38.86" y="0">S</tspan>
+        <tspan class="cls-10" x="47.6" y="0">t</tspan>
+        <tspan class="cls-9" x="52.51" y="0">oc</tspan>
+        <tspan class="cls-7" x="68.33" y="0">k</tspan>
+    </text>
+</svg>

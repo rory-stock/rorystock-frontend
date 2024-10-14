@@ -1,28 +1,29 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import {ViewTransitions} from 'astro:transitions';
 
 interface Props {
     title: string;
 }
 
-const { title } = Astro.props;
-
+const {title} = Astro.props;
 ---
 
 <title>{title} - Rory Stock</title>
 
 <!-- Primary Meta Tags -->
 <meta name="title" content="Rory Stock Photography">
-<meta name="description" content="Rory Stock is a New Zealand based sports and product photographer specialising in mountain biking.">
-<meta name="keywords" content="photography, mountain bike photography, action photography, product photography, portfolio, Rory Stock photography">
+<meta name="description"
+      content="Rory Stock is a New Zealand based sports and product photographer specialising in mountain biking.">
+<meta name="keywords"
+      content="photography, mountain bike photography, action photography, product photography, portfolio, Rory Stock photography">
 <meta name="robots" content="index, follow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="English">
 <meta name="author" content="Rory Stock">
 <meta name="copyright" content="Rory Stock">
-<meta name="viewport" content="width=device-width" />
+<meta name="viewport" content="width=device-width"/>
 <link rel="canonical" href="https://rorystock.com/">
-<meta name="generator" content={Astro.generator} />
+<meta name="generator" content={Astro.generator}/>
 
 <!-- Icons -->
 <link rel="icon" href="/favicons/favicon.svg" type="image/svg+xml">
@@ -39,11 +40,13 @@ const { title } = Astro.props;
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://rorystock.com/">
 <meta property="og:title" content="Rory Stock Photography">
-<meta property="og:description" content="Rory Stock is a New Zealand based sports and product photographer specialising in mountain biking.">
+<meta property="og:description"
+      content="Rory Stock is a New Zealand based sports and product photographer specialising in mountain biking.">
 
 <!-- Twitter -->
 <meta property="twitter:url" content="https://rorystock.com/">
 <meta property="twitter:title" content="Rory Stock Photography">
-<meta property="twitter:description" content="Rory Stock is a New Zealand based sports and product photographer specialising in mountain biking.">
+<meta property="twitter:description"
+      content="Rory Stock is a New Zealand based sports and product photographer specialising in mountain biking.">
 
-<ViewTransitions />
+<ViewTransitions/>

@@ -1,9 +1,9 @@
 ---
 interface Props {
-  title: string;
+    title: string;
 }
 
-const { title } = Astro.props;
+const {title} = Astro.props;
 
 const activeHome = title === "Home" ? "text-black" : "text-gray-500";
 const activePersonal = title === "Personal" ? "text-black" : "text-gray-500";
@@ -13,9 +13,9 @@ const activeContact = title === "Contact" ? "text-black" : "text-gray-500";
 ---
 
 <ul class="hidden lg:inline-flex gap-4 font-neue-haas-grotesk-text font-semibold text-xl items-center pr-6">
-  <li><a href="/" class={activeHome}>Home</a></li>
-  <li><a href="/personal" class={activePersonal}>Personal</a></li>
-  <li><a href="/projects" class={activeProjects}>Projects</a></li>
-  <li><a href="/events" class={activeEvents}>Events</a></li>
-  <li><a href="/contact" class={activeContact}>Contact</a></li>
+    <li><a href="/" class={activeHome}>Home</a></li>
+    <li><a href="/personal" class={activePersonal}>Personal</a></li>
+    <li><a href="/projects" class={activeProjects}>Projects</a></li>
+    <li><a href="/events" class={activeEvents}>Events</a></li>
+    <li><a href="/contact" class={activeContact}>Contact</a></li>
 </ul>
